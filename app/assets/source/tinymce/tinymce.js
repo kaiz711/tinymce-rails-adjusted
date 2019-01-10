@@ -12801,7 +12801,7 @@
       }
     };
     var scrollToBr = function (dom, selection, brElm) {
-      var marker = dom.create('span', {}, '&nbsp;');
+      var marker = dom.create('span', {}, '');
       brElm.parentNode.insertBefore(marker, brElm);
       selection.scrollIntoView(marker);
       dom.remove(marker);
